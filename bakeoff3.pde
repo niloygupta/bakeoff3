@@ -122,11 +122,19 @@ import java.util.Collections;
       //fill(0,255,0);
       //rect(0,0,t.z,t.z);
 
+      /*
 
       v1 = new PVector(modelX(0, 0, 0), modelY(0, 0, 0));
       v2 = new PVector(modelX(t.z, 0, 0), modelY(t.z, 0, 0));
       v3 = new PVector(modelX(t.z, t.z, 0), modelY(t.z, t.z, 0));
       v4 = new PVector(modelX(0, t.z, 0),modelY(0, t.z, 0));
+      */
+      
+      v1 = new PVector(modelX(-t.z/2, -t.z/2, 0), modelY(-t.z/2, -t.z/2, 0));
+      v2 = new PVector(modelX(t.z/2, -t.z/2, 0), modelY(t.z/2,-t.z/2, 0));
+      v3 = new PVector(modelX(t.z/2, t.z/2, 0), modelY(t.z/2, t.z/2, 0));
+      v4 = new PVector(modelX(-t.z/2, t.z/2, 0),modelY(-t.z/2, t.z/2, 0));
+      
       popMatrix();
       isNewTrial = false;
     }
